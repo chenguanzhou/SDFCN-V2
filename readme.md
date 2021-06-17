@@ -9,7 +9,8 @@ In our [previous work](http://ieeexplore.ieee.org/document/8326706/), we propose
 * **Overfitting phenomenon**: Oversize model with large number of parameters cost more computational resources. When training on small-scale datasets with few categories such as the ISPRS 2D semantic labeling datasets, models are more prone to fall into over-fitting. Besides, other factors like seasonal changes, diverse image resolution and illumination conditions may also cause model's instability.
 * **Simple post-processing methods for overlarge RS image segmentation**: Commonly-used methods simply merge predictions in a sliding-window majority-voting manner. Under different scales of overlapping stride, the final fusion result for the whole RS images differs accordingly. Excessive overlap degree will distinctly increase the amount of calculation.
 
-![The overall structure of SDFCN model](docs/sdfcn.jpg)
+The overall structure of SDFCN model:
+![](docs/sdfcn.jpg)
 
 ## SDFCNv2
 
@@ -55,11 +56,14 @@ we conducted experiments on two public datasets named [Potsdam dataset](https://
 |         | SDFCN V2+scSE  | 0.8697 | 0.7471 | 0.3621 |
 |         | SDFCN V2+SCFSE | 0.8762 | 0.7562 | 0.3980 |
 
-![Segmentation results on Potsdam dataset with different model](docs/potsdam.jpg)
+Segmentation results on Potsdam dataset with different model:
+![](docs/potsdam.jpg)
 
-![Segmentation results on Evlab dataset with different model](docs/evlab.jpg)
+Segmentation results on Evlab dataset with different model:
+![](docs/evlab.jpg)
 
-![Segmentation results on Songxi dataset with different model](docs/songxi.jpg)
+Segmentation results on Songxi dataset with different model:
+![](docs/songxi.jpg)
 
 
 ### Performances of different gamma-transform-based data augmentation applied on SDFCNv2 model equipped with SCFSE module in three datasets
@@ -79,7 +83,8 @@ we conducted experiments on two public datasets named [Potsdam dataset](https://
 |         |        SIGT        | 0.8718 | 0.7483 | 0.3895 |
 |         |    SSSGT (ours)    | 0.8762 | 0.7562 | 0.3980 |
 
-![raining and validation loss curve of SDFCN V2 model using different gamma-transform-based data augmentation methods on different datasets](docs/loss.png)
+Training and validation loss curve of SDFCN V2 model using different gamma-transform-based data augmentation methods on different datasets:
+![](docs/loss.png)
 
 
 ## Installation 
